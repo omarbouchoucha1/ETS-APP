@@ -1885,7 +1885,11 @@ Responsable_ETS
 	      </child>
 
 	      <child>
+<<<<<<< HEAD
 		<widget class="GtkButton" id="courbeSang_BouttonDon">
+=======
+		<widget class="GtkButton" id="courbeSangBouttonDon">
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
 		  <property name="width_request">96</property>
 		  <property name="height_request">32</property>
 		  <property name="visible">True</property>
@@ -8024,7 +8028,11 @@ par mois</property>
       </child>
 
       <child>
+<<<<<<< HEAD
 	<widget class="GtkLabel" id="label_2ets_sg">
+=======
+	<widget class="GtkLabel" id="label_ets_sg">
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
 	  <property name="width_request">112</property>
 	  <property name="height_request">24</property>
 	  <property name="visible">True</property>

@@ -643,7 +643,11 @@ create_gestiondesdonwindow (void)
   GtkWidget *hbox19;
   GtkWidget *image22;
   GtkWidget *label51;
+<<<<<<< HEAD
   GtkWidget *courbeSang_BouttonDon;
+=======
+  GtkWidget *courbeSangBouttonDon;
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
   GtkWidget *alignment16;
   GtkWidget *hbox18;
   GtkWidget *image21;
@@ -793,6 +797,7 @@ create_gestiondesdonwindow (void)
   gtk_widget_show (label51);
   gtk_box_pack_start (GTK_BOX (hbox19), label51, FALSE, FALSE, 0);
 
+<<<<<<< HEAD
   courbeSang_BouttonDon = gtk_button_new ();
   gtk_widget_show (courbeSang_BouttonDon);
   gtk_fixed_put (GTK_FIXED (courbeSangBouttonDon), courbeSang_BouttonDon, 128, 416);
@@ -801,6 +806,16 @@ create_gestiondesdonwindow (void)
   alignment16 = gtk_alignment_new (0.5, 0.5, 0, 0);
   gtk_widget_show (alignment16);
   gtk_container_add (GTK_CONTAINER (courbeSang_BouttonDon), alignment16);
+=======
+  courbeSangBouttonDon = gtk_button_new ();
+  gtk_widget_show (courbeSangBouttonDon);
+  gtk_fixed_put (GTK_FIXED (courbeSangBouttonDon), courbeSangBouttonDon, 128, 416);
+  gtk_widget_set_size_request (courbeSangBouttonDon, 96, 32);
+
+  alignment16 = gtk_alignment_new (0.5, 0.5, 0, 0);
+  gtk_widget_show (alignment16);
+  gtk_container_add (GTK_CONTAINER (courbeSangBouttonDon), alignment16);
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
 
   hbox18 = gtk_hbox_new (FALSE, 2);
   gtk_widget_show (hbox18);
@@ -923,7 +938,11 @@ create_gestiondesdonwindow (void)
   g_signal_connect ((gpointer) typeSangRareBouttonDon, "clicked",
                     G_CALLBACK (on_typeSangRareBouttonDon_clicked),
                     NULL);
+<<<<<<< HEAD
   g_signal_connect ((gpointer) courbeSang_BouttonDon, "clicked",
+=======
+  g_signal_connect ((gpointer) courbeSangBouttonDon, "clicked",
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
                     G_CALLBACK (on_coubeSangBouttonDon_clicked),
                     NULL);
   g_signal_connect ((gpointer) tableuDesDonBouttonDon, "clicked",
@@ -966,7 +985,11 @@ create_gestiondesdonwindow (void)
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, hbox19, "hbox19");
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, image22, "image22");
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, label51, "label51");
+<<<<<<< HEAD
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, courbeSang_BouttonDon, "courbeSang_BouttonDon");
+=======
+  GLADE_HOOKUP_OBJECT (gestiondesdonwindow, courbeSangBouttonDon, "courbeSangBouttonDon");
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, alignment16, "alignment16");
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, hbox18, "hbox18");
   GLADE_HOOKUP_OBJECT (gestiondesdonwindow, image21, "image21");
@@ -1957,7 +1980,10 @@ create_manipfichiedonneur (void)
   image78 = gtk_image_new_from_stock ("gtk-apply", GTK_ICON_SIZE_BUTTON);
   gtk_widget_show (image78);
   gtk_fixed_put (GTK_FIXED (fixedFiche4), image78, 0, 0);
+<<<<<<< HEAD
   gtk_widget_set_size_request (image78, 0, 0);
+=======
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
 
   label86 = gtk_label_new (_("Sexe"));
   gtk_widget_show (label86);
@@ -3332,7 +3358,11 @@ create_pochesdessangs (void)
   GtkWidget *fixed_sg;
   GtkWidget *entry_pourcentage_sg;
   GtkWidget *entry_type_sg;
+<<<<<<< HEAD
   GtkWidget *label_2ets_sg;
+=======
+  GtkWidget *label_ets_sg;
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
   GtkWidget *combobox_ets_sg;
   GtkWidget *label_type_sg;
   GtkWidget *labelpourcentage_sg;
@@ -3403,10 +3433,17 @@ create_pochesdessangs (void)
   gtk_entry_set_text (GTK_ENTRY (entry_type_sg), _("A+"));
   gtk_entry_set_invisible_char (GTK_ENTRY (entry_type_sg), 8226);
 
+<<<<<<< HEAD
   label_2ets_sg = gtk_label_new (_("etablissement"));
   gtk_widget_show (label_2ets_sg);
   gtk_fixed_put (GTK_FIXED (fixed_sg), label_2ets_sg, 64, 80);
   gtk_widget_set_size_request (label_2ets_sg, 112, 24);
+=======
+  label_ets_sg = gtk_label_new (_("etablissement"));
+  gtk_widget_show (label_ets_sg);
+  gtk_fixed_put (GTK_FIXED (fixed_sg), label_ets_sg, 64, 80);
+  gtk_widget_set_size_request (label_ets_sg, 112, 24);
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
 
   combobox_ets_sg = gtk_combo_box_entry_new_text ();
   gtk_widget_show (combobox_ets_sg);
@@ -3653,7 +3690,11 @@ create_pochesdessangs (void)
   GLADE_HOOKUP_OBJECT (pochesdessangs, fixed_sg, "fixed_sg");
   GLADE_HOOKUP_OBJECT (pochesdessangs, entry_pourcentage_sg, "entry_pourcentage_sg");
   GLADE_HOOKUP_OBJECT (pochesdessangs, entry_type_sg, "entry_type_sg");
+<<<<<<< HEAD
   GLADE_HOOKUP_OBJECT (pochesdessangs, label_2ets_sg, "label_2ets_sg");
+=======
+  GLADE_HOOKUP_OBJECT (pochesdessangs, label_ets_sg, "label_ets_sg");
+>>>>>>> 8a5f1bcd0ae2bd053ec5f0df3c5c8f69a8d511f3
   GLADE_HOOKUP_OBJECT (pochesdessangs, combobox_ets_sg, "combobox_ets_sg");
   GLADE_HOOKUP_OBJECT (pochesdessangs, label_type_sg, "label_type_sg");
   GLADE_HOOKUP_OBJECT (pochesdessangs, labelpourcentage_sg, "labelpourcentage_sg");
